@@ -15,56 +15,181 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+
+/* 전체 배경 */
 .stApp {
     background-color: #0b1020;
-    color: #f1f5f9;
+    color: #ffffff !important;
 }
+
+/* 기본 글자 */
+html, body, p, span, label,
+.stMarkdown, .stText, li {
+    color: #f1f5f9 !important;
+}
+
+/* 제목 */
+h1, h2, h3, h4, h5 {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+/* 설명 글자 */
+.stCaption, small {
+    color: #cbd5e1 !important;
+}
+
+/* 사이드바 */
 [data-testid="stSidebar"] {
     background-color: #111a2e;
 }
-.block-container {
-    max-width: 1450px;
-    padding-top: 2rem;
+
+[data-testid="stSidebar"] * {
+    color: #ffffff !important;
 }
-h1, h2, h3 {
-    color: #f8fafc !important;
+
+/* 입력창 */
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border: 1px solid #64748b !important;
 }
-div[data-testid="stMetric"] {
-    background: linear-gradient(135deg,#182640,#111a2e);
-    border: 1px solid #30415e;
-    border-radius: 14px;
-    padding: 16px;
+
+/* 선택 메뉴 */
+.stSelectbox div[data-baseweb="select"] {
+    background-color: #1e293b !important;
 }
-div[data-testid="stMetricValue"] {
-    color: #38bdf8;
+
+.stSelectbox div[data-baseweb="select"] * {
+    color: #ffffff !important;
 }
+
+/* 드롭다운 목록 */
+[data-baseweb="popover"] {
+    background-color: #1e293b !important;
+}
+
+[data-baseweb="menu"] * {
+    color: #ffffff !important;
+}
+
+/* 버튼 */
 div.stButton > button {
     background: linear-gradient(135deg,#2563eb,#7c3aed);
-    color: white;
+    color: #ffffff !important;
     border: none;
     border-radius: 10px;
     min-height: 45px;
     font-weight: bold;
     width: 100%;
 }
+
 div.stButton > button:hover {
     background: #3b82f6;
-    color: white;
+    color: #ffffff !important;
+    border: 1px solid #60a5fa;
 }
+
+/* 탭 */
+button[data-baseweb="tab"] {
+    color: #cbd5e1 !important;
+    font-weight: bold;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #38bdf8 !important;
+}
+
+/* 카드 */
 .game-card {
     background: linear-gradient(135deg,#182640,#111827);
     padding: 20px;
     border-radius: 15px;
     border: 1px solid #334155;
     margin-bottom: 12px;
+    color: #ffffff !important;
 }
+
+.game-card * {
+    color: #ffffff !important;
+}
+
+/* 뉴스 */
 .news-card {
     background: #17243a;
     border-left: 4px solid #38bdf8;
     padding: 15px;
     border-radius: 8px;
     margin: 8px 0;
+    color: #ffffff !important;
 }
+
+/* 지표 */
+div[data-testid="stMetric"] {
+    background: linear-gradient(135deg,#182640,#111a2e);
+    border: 1px solid #30415e;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #38bdf8 !important;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #ffffff !important;
+}
+
+/* 안내 상자 */
+.stAlert {
+    background-color: #1e293b !important;
+}
+
+.stAlert * {
+    color: #ffffff !important;
+}
+
+/* 체크박스 */
+.stCheckbox label {
+    color: #ffffff !important;
+}
+
+/* 라디오 버튼 */
+.stRadio label {
+    color: #ffffff !important;
+}
+
+/* 슬라이더 */
+.stSlider label {
+    color: #ffffff !important;
+}
+
+/* 구분선 */
+hr {
+    border-color: #334155 !important;
+}
+
+/* 데이터프레임 */
+[data-testid="stDataFrame"] {
+    background-color: #17243a;
+}
+
+/* 표 */
+table {
+    color: #ffffff !important;
+}
+
+th {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+
+td {
+    color: #f1f5f9 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
